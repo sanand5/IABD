@@ -1,11 +1,8 @@
+def mitjana(hola):
+    suma = 0
+    for i in hola:
+        suma +=i
+    return suma / len(hola)
 
-for i in range(20):         # Això recorre del 0 al 19
-    print(i)
-    if i<10:
-        continue
-    if i%2==0:
-        print("Es parell")
-    if i>=15:
-        break
+print(mitjana(range(0,11)))
 
-print("Final del bucle")
