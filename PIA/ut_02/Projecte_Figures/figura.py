@@ -6,7 +6,20 @@ class Figura:
     def __init__(self, punt_inicial, color):
         self._punt_inicial = punt_inicial
         self._color = color
-        
+    
+    @property
+    def punt_inicial(self):
+        return self._punt_inicial
+    @punt_inicial.setter
+    def punt_inicial(self, value):
+        self._punt_inicial = value
+    @property
+    def color(self):
+        return self._color
+    @color.setter
+    def color(self, value):
+        self._color = value
+
     @abstractmethod
     def area(self):
         pass
